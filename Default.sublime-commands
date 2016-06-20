@@ -1,0 +1,18 @@
+[
+  {
+    "caption": "MDN Search",
+    "command": "mdn_search"
+  },
+  {
+    "caption": "DXR Search",
+    "command": "dxr_search"
+  },
+  {
+    "caption": "DXR File Search",
+    "command": "dxrf_search"
+  },
+  {
+    "caption": "Bugzilla Search",
+    "command": "bugzilla_search"
+  }
+]
