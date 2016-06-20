@@ -6,29 +6,29 @@ Report any issues here: https://github.com/saadq/MozillaQuery/issues
 
 Installation
 ========================
-1. Open the Command Palette by pressing <kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Windows
-2. Type in `Package Control: Install Package` and press <kbd>Enter</kbd>
-3. Type `SublimeMozilla` and hit <kbd>Enter</kbd>
+1. Open the Command Palette by pressing ⌘+Shift+P on Mac or Ctrl+Shift+P on Windows
+2. Type in `Package Control: Install Package` and press Enter
+3. Type `SublimeMozilla` and hit Enter
 
 
 Usage
 ========================
-1. Open up the Command Palette by pressing <kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Windows
-2. Type in the the command for the site you want to query (Ex: **MDN Search**) and press <kbd>Enter</kbd>
-3. Enter in your query (Ex: **Arrow Functions**) and press <kbd>Enter</kbd>
+1. Open up the Command Palette by pressing ⌘+Shift+P on Mac or Ctrl+Shift+P on Windows
+2. Type in the the command for the site you want to query (Ex: MDN Search) and press Enter
+3. Enter in your query (Ex: Arrow Functions) and press Enter
 
 
 Command Palette Actions
 ========================
-* **MDN Search** (command name: mdn_search)
-* **DXR Search** (command name: dxr_search)
-* **DXR File Search** (command name: dxrf_search)
-* **Bugzilla Search** (command name: bugzilla_search)
+* MDN Search (command name: mdn_search)
+* DXR Search (command name: dxr_search)
+* DXR File Search (command name: dxrf_search)
+* Bugzilla Search (command name: bugzilla_search)
 
 
 Setting up hotkeys:
 ========================
-1. Open up your User keybindings file (**Preferences -> Key Bindings -> User**)
+1. Open up your User keybindings file (Preferences -> Key Bindings -> User)
 2. Add an entry with the key combination you want to use as well as the name of the command
 
 Example:
