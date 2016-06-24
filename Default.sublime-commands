@@ -4,15 +4,31 @@
     "command": "mdn_search"
   },
   {
+    "caption": "MDN Search Current Selection",
+    "command": "mdn_search_selection"
+  },
+  {
     "caption": "DXR Search",
     "command": "dxr_search"
+  },
+  {
+    "caption": "DXR Search Current Selection",
+    "command": "dxr_search_selection"
   },
   {
     "caption": "DXR File Search",
     "command": "dxrf_search"
   },
   {
+    "caption": "DXR File Search Current Selection",
+    "command": "dxrf_search_selection"
+  },
+  {
     "caption": "Bugzilla Search",
     "command": "bugzilla_search"
+  },
+  {
+    "caption": "Bugzilla Search Current Selection",
+    "command": "bugzilla_search_selection"
   }
 ]
