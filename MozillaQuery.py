@@ -6,6 +6,15 @@ import sublime
 import sublime_plugin
 import webbrowser
 
+def query_selection(view, on_query):
+    """ Function for querying a site using the current selection """
+    for selection in view.sel():
+        if not selection.empty():
+            query = view.substr(selection)
+            on_query(query)
+        else:
+            print("No selection was found.")
+
 # MDN Queries
 def query_mdn(query):
     url = "https://developer.mozilla.org/en-US/search?q={0}".format(query)
@@ -20,12 +29,7 @@ class MdnSearchCommand(sublime_plugin.ApplicationCommand):
 class MdnSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for searching current selection through MDN """
     def run(self, edit):
-        for selection in self.view.sel():
-            if not selection.empty():
-                query = self.view.substr(selection)
-                query_mdn(query)
-            else:
-                print("No selection was found.")
+        query_selection(self.view, query_mdn)
 
 # DXR Queries
 def query_dxr(query):
@@ -41,12 +45,7 @@ class DxrSearchCommand(sublime_plugin.ApplicationCommand):
 class DxrSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for doing a code search on current selection through DXR """
     def run(self, edit):
-        for selection in self.view.sel():
-            if not selection.empty():
-                query = self.view.substr(selection)
-                query_dxr(query)
-            else:
-                print("No selection was found.")
+        query_selection(self.view, query_dxr)
 
 # DXR File Queries
 def file_query_dxr(query):
@@ -62,12 +61,7 @@ class DxrfSearchCommand(sublime_plugin.ApplicationCommand):
 class DxrfSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for doing a file search on the current selection through DXR """
     def run(self, edit):
-        for selection in self.view.sel():
-            if not selection.empty():
-                query = self.view.substr(selection)
-                file_query_dxr(query)
-            else:
-                print("No selection was found.")
+        query_selection(self.view, file_query_dxr)
 
 # Bugzilla Queries
 def query_bugzilla(query):
@@ -83,9 +77,4 @@ class BugzillaSearchCommand(sublime_plugin.ApplicationCommand):
 class BugzillaSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for doing a file search on the current selection through DXR """
     def run(self, edit):
-        for selection in self.view.sel():
-            if not selection.empty():
-                query = self.view.substr(selection)
-                query_bugzilla(query)
-            else:
-                print("No selection was found.")
+        query_selection(self.view, query_bugzilla)
