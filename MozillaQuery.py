@@ -16,6 +16,7 @@ def query_selection(view, on_query):
             print("No selection was found.")
 
 # MDN Queries
+# ==========================
 def query_mdn(query):
     url = "https://developer.mozilla.org/en-US/search?q={0}".format(query)
     webbrowser.open_new_tab(url)
@@ -23,8 +24,7 @@ def query_mdn(query):
 class MdnSearchCommand(sublime_plugin.ApplicationCommand):
     """ Command for searching through MDN """
     def run(self):
-        text = "MDN Search Query:"
-        sublime.active_window().show_input_panel(text, "", query_mdn, None, None)
+        sublime.active_window().show_input_panel("MDN Search Query: ", "", query_mdn, None, None)
 
 class MdnSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for searching current selection through MDN """
@@ -32,6 +32,7 @@ class MdnSearchSelectionCommand(sublime_plugin.TextCommand):
         query_selection(self.view, query_mdn)
 
 # DXR Queries
+# ==========================
 def query_dxr(query):
     url = "https://dxr.mozilla.org/mozilla-central/search?q={0}&redirect=false".format(query)
     webbrowser.open_new_tab(url)
@@ -39,8 +40,7 @@ def query_dxr(query):
 class DxrSearchCommand(sublime_plugin.ApplicationCommand):
     """ Command for doing a code search through DXR """
     def run(self):
-        text = "DXR Search Query:"
-        sublime.active_window().show_input_panel(text, "", query_dxr, None, None)
+        sublime.active_window().show_input_panel("DXR Search Query: ", "", query_dxr, None, None)
 
 class DxrSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for doing a code search on current selection through DXR """
@@ -48,6 +48,7 @@ class DxrSearchSelectionCommand(sublime_plugin.TextCommand):
         query_selection(self.view, query_dxr)
 
 # DXR File Queries
+# ==========================
 def file_query_dxr(query):
     url = "https://dxr.mozilla.org/mozilla-central/search?q=file:{0}&redirect=false".format(query)
     webbrowser.open_new_tab(url)
@@ -55,8 +56,7 @@ def file_query_dxr(query):
 class DxrfSearchCommand(sublime_plugin.ApplicationCommand):
     """ Command for doing a file search through DXR """
     def run(self):
-        text = "DXR File Search Query:"
-        sublime.active_window().show_input_panel(text, "", query_dxr, None, None)
+        sublime.active_window().show_input_panel("DXR File Search Query: ", "", query_dxr, None, None)
 
 class DxrfSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for doing a file search on the current selection through DXR """
@@ -64,6 +64,7 @@ class DxrfSearchSelectionCommand(sublime_plugin.TextCommand):
         query_selection(self.view, file_query_dxr)
 
 # Bugzilla Queries
+# ==========================
 def query_bugzilla(query):
     url = "https://bugzilla.mozilla.org/buglist.cgi?quicksearch={0}".format(query)
     webbrowser.open_new_tab(url)
@@ -71,8 +72,7 @@ def query_bugzilla(query):
 class BugzillaSearchCommand(sublime_plugin.ApplicationCommand):
     """ Command for searching through Bugzilla """
     def run(self):
-        text = "Bugzilla Search Query: "
-        sublime.active_window().show_input_panel(text, "", query_bugzilla, None, None)
+        sublime.active_window().show_input_panel("Bugzilla Search Query: ", "", query_bugzilla, None, None)
 
 class BugzillaSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for doing a file search on the current selection through DXR """
