@@ -1,6 +1,6 @@
 [
   {
-    "caption": "MDN Search",
+    "caption": "MDN Search...",
     "command": "mdn_search"
   },
   {
@@ -8,7 +8,7 @@
     "command": "mdn_search_selection"
   },
   {
-    "caption": "DXR Search",
+    "caption": "DXR Search...",
     "command": "dxr_search"
   },
   {
@@ -16,7 +16,7 @@
     "command": "dxr_search_selection"
   },
   {
-    "caption": "DXR File Search",
+    "caption": "DXR File Search...",
     "command": "dxrf_search"
   },
   {
@@ -24,7 +24,7 @@
     "command": "dxrf_search_selection"
   },
   {
-    "caption": "Bugzilla Search",
+    "caption": "Bugzilla Search...",
     "command": "bugzilla_search"
   },
   {
