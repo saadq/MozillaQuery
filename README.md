@@ -6,7 +6,7 @@ A plugin that allows you to query DXR, MDN, and Bugzilla from within Sublime.
 ## Installation
 1. Open the Command Palette by pressing <kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Windows
 2. Type in `Package Control: Install Package` and press <kbd>Enter</kbd>
-3. Type `SublimeMozilla` and hit <kbd>Enter</kbd>
+3. Type `MozillaQuery` and hit <kbd>Enter</kbd>
 
 ## Usage
 1. Open up the Command Palette by pressing <kbd>⌘</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Mac or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on Windows
