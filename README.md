@@ -14,10 +14,17 @@ A plugin that allows you to query DXR, MDN, and Bugzilla from within Sublime.
 3. Enter in your query (Ex: **Arrow Functions**) and press <kbd>Enter</kbd>
 
 ## Command Palette Actions:
-* **MDN Search** (command name: mdn_search)
-* **DXR Search** (command name: dxr_search)
-* **DXR File Search** (command name: dxrf_search)
-* **Bugzilla Search** (command name: bugzilla_search)
+### Input Commands
+* **MDN Search...** (command name: *mdn_search*)
+* **DXR Search...** (command name: *dxr_search*)
+* **DXR File Search...** (command name: *dxrf_search*)
+* **Bugzilla Search...** (command name: *bugzilla_search*)
+
+### Selection Commands
+* **MDN Search Current Selection** (command name: *mdn_search_selection*)
+* **DXR Search Current Selection** (command name: *dxr_search_selection*)
+* **DXR File Search Current Selection** (command name: *dxrf_search_selection*)
+* **Bugzilla Search Current Selection** (command name: *bugzilla_search_selection*)
 
 ## Setting up hotkeys:
 1. Open up your User keybindings file (**Preferences -> Key Bindings -> User**)
