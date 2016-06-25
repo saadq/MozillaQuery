@@ -21,7 +21,7 @@ def query_mdn(query):
     url = "https://developer.mozilla.org/en-US/search?q={0}".format(query)
     webbrowser.open_new_tab(url)
 
-class MdnSearchCommand(sublime_plugin.ApplicationCommand):
+class MdnSearchCommand(sublime_plugin.WindowCommand):
     """ Command for searching through MDN """
     def run(self):
         sublime.active_window().show_input_panel("MDN Search Query: ", "", query_mdn, None, None)
@@ -37,7 +37,7 @@ def query_dxr(query):
     url = "https://dxr.mozilla.org/mozilla-central/search?q={0}&redirect=false".format(query)
     webbrowser.open_new_tab(url)
 
-class DxrSearchCommand(sublime_plugin.ApplicationCommand):
+class DxrSearchCommand(sublime_plugin.WindowCommand):
     """ Command for doing a code search through DXR """
     def run(self):
         sublime.active_window().show_input_panel("DXR Search Query: ", "", query_dxr, None, None)
@@ -53,7 +53,7 @@ def file_query_dxr(query):
     url = "https://dxr.mozilla.org/mozilla-central/search?q=file:{0}&redirect=false".format(query)
     webbrowser.open_new_tab(url)
 
-class DxrfSearchCommand(sublime_plugin.ApplicationCommand):
+class DxrfSearchCommand(sublime_plugin.WindowCommand):
     """ Command for doing a file search through DXR """
     def run(self):
         sublime.active_window().show_input_panel("DXR File Search Query: ", "", query_dxr, None, None)
@@ -69,7 +69,7 @@ def query_bugzilla(query):
     url = "https://bugzilla.mozilla.org/buglist.cgi?quicksearch={0}".format(query)
     webbrowser.open_new_tab(url)
 
-class BugzillaSearchCommand(sublime_plugin.ApplicationCommand):
+class BugzillaSearchCommand(sublime_plugin.WindowCommand):
     """ Command for searching through Bugzilla """
     def run(self):
         sublime.active_window().show_input_panel("Bugzilla Search Query: ", "", query_bugzilla, None, None)
