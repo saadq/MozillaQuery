@@ -1,0 +1,8 @@
+MozillaQuery
+Version 0.1.1
+https://github.com/saadq/MozillaQuery
+
+Report any issues here: https://github.com/saadq/MozillaQuery/issues
+******************************************************************************
+
+- Fix DXR file query command

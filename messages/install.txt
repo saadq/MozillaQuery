@@ -4,13 +4,6 @@ https://github.com/saadq/MozillaQuery
 Report any issues here: https://github.com/saadq/MozillaQuery/issues
 ******************************************************************************
 
-Installation
-========================
-1. Open the Command Palette by pressing ⌘+Shift+P on Mac or Ctrl+Shift+P on Windows
-2. Type in `Package Control: Install Package` and press Enter
-3. Type `SublimeMozilla` and hit Enter
-
-
 Usage
 ========================
 1. Open up the Command Palette by pressing ⌘+Shift+P on Mac or Ctrl+Shift+P on Windows

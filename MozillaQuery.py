@@ -56,7 +56,7 @@ def file_query_dxr(query):
 class DxrfSearchCommand(sublime_plugin.WindowCommand):
     """ Command for doing a file search through DXR """
     def run(self):
-        sublime.active_window().show_input_panel("DXR File Search Query: ", "", query_dxr, None, None)
+        sublime.active_window().show_input_panel("DXR File Search Query: ", "", file_query_dxr, None, None)
 
 class DxrfSearchSelectionCommand(sublime_plugin.TextCommand):
     """ Command for doing a file search on the current selection through DXR """
