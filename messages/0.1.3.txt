@@ -1,0 +1,8 @@
+MozillaQuery
+Version 0.1.3
+https://github.com/saadq/MozillaQuery
+
+Report any issues here: https://github.com/saadq/MozillaQuery/issues
+******************************************************************************
+
+- Remove redundant DXR command for file searching

@@ -16,14 +16,6 @@
     "command": "dxr_search_selection"
   },
   {
-    "caption": "DXR File Search...",
-    "command": "dxrf_search"
-  },
-  {
-    "caption": "DXR File Search Current Selection",
-    "command": "dxrf_search_selection"
-  },
-  {
     "caption": "Bugzilla Search...",
     "command": "bugzilla_search"
   },

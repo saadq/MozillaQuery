@@ -47,22 +47,6 @@ class DxrSearchSelectionCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         query_selection(self.view, query_dxr)
 
-# DXR File Queries
-# ==========================
-def file_query_dxr(query):
-    url = "https://dxr.mozilla.org/mozilla-central/search?q=file:{0}&redirect=false".format(query)
-    webbrowser.open_new_tab(url)
-
-class DxrfSearchCommand(sublime_plugin.WindowCommand):
-    """ Command for doing a file search through DXR """
-    def run(self):
-        sublime.active_window().show_input_panel("DXR File Search Query: ", "", file_query_dxr, None, None)
-
-class DxrfSearchSelectionCommand(sublime_plugin.TextCommand):
-    """ Command for doing a file search on the current selection through DXR """
-    def run(self, edit):
-        query_selection(self.view, file_query_dxr)
-
 # Bugzilla Queries
 # ==========================
 def query_bugzilla(query):
